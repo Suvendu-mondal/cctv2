@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CCTV Camera Installation in Kolkata | Security Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* =========================
+   CCTV Professional Website CSS
+   ========================= */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url('bgyollo.jpg'); /* Replace with your JPG file path */
+  background-size: cover;        /* Make it cover the entire header */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Prevent repeating */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111827;
+  background: url('bgyollo.jpg') no-repeat center center/cover;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px; /* more left padding */
+  position: relative;
+  background-image: url('cctvlive.png'); /* Replace with your background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  text-align: left;  /* align text left */
+}
+
+/* Overlay */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 58, 138, 0.3); /* blue tint */
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+/* Text inside */
+.container h2 {
+  position: relative; /* stays above overlay */
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.container p {
+  text-align: left;   /* 🔹 Aligns text to the left */
+  margin-left: 20px;  /* 🔹 Adds a little padding from edge */
+  color: #fff;        /* 🔹 Keeps text visible over background */
+  font-size: 18px;
+  line-height: 1.6;
+  position: relative; /* stays above overlay */
+}
+
+.features {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: flex-start;  /* 🔹 align to left */
+  gap: 20px;                /* spacing between features */
+  margin-left: 20px;        /* push inward from left */
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15); /* translucent circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  font-size: 20px;
+  color: #fff;
+}
+
+
+
+/* =========================
+   Typography
+   ========================= */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f1f5f9;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.btn-primary {
+  display: inline-block;
+  background: #facc15; /* yellow */
+  color: #1e3a8a;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+}
+
+/* Call Button */
+.call-button {
+  display: inline-block;
+  background: white;
+  color: #14527a;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 50px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.call-button:hover {
+  background: #14527a;
+  color: white;
+}
+
+.call-button i {
+  margin-right: 8px;
+}
+
+/* =========================
+   Features Section
+   ========================= */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  max-width: 150px;
+}
+
+.feature .circle {
+  background: white;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.feature i {
+  font-size: 24px;
+  color: #1e3a8a;
+}
+
+/* =========================
+   Info Items
+   ========================= */
+.info-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.info-item {
+  max-width: 200px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.info-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background: #1e293b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Navigation / Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2 font-bold text-indigo-600 text-2xl">
+        <!-- Logo Text -->
+       <button class="logoBtn right" id="btnRight" aria-label="Right logo button">
+  <img src="NDL Logo.png" alt="National divine service" width="160" height="auto" />
+</button>
+      </a>
+      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#process" class="hover:text-indigo-600 transition">Working Process</a>
+        <a href="#gallery" class="hover:text-indigo-600 transition">Gallery</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <span class="sr-only">Open menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="hidden md:hidden bg-white border-t border-indigo-200">
+      <a href="#services" class="block px-6 py-3 border-b border-indigo-100 hover:bg-indigo-50">Services</a>
+      <a href="#process" class="block px-6 py-3 border-b border-indigo-100 hover:bg-indigo-50">Working Process</a>
+      <a href="#gallery" class="block px-6 py-3 border-b border-indigo-100 hover:bg-indigo-50">Gallery</a>
+      <a href="#contact" class="block px-6 py-3 border-b border-indigo-100 hover:bg-indigo-50">Contact</a>
+    </nav>
+  </header>
+
+<div class="container">
+    <h1>#No.1 CCTV Camera Installation Company in Kolkata</h1>
+    <p>
+      Trusted and professional CCTV camera installation services tailored to secure your home and workplace. 
+      Our experts ensure reliable surveillance solutions with the latest technology.
+    </p>
+    <a href="#contact" class="btn-primary">Get a Free Quote</a>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature">
+        <div class="circle"><i class="fas fa-user-tie"></i></div>
+        <div>Expert Installers</div>
+      </div>
+      <div class="feature">
+        <div class="circle"><i class="fas fa-clock"></i></div>
+        <div>Timely Service</div>
+      </div>
+      <div class="feature">
+        <div class="circle"><i class="fas fa-tags"></i></div>
+        <div>Affordable Pricing</div>
+      </div>
+    </div>
+
+    <!-- Call Button -->
+    <a href="tel:+9831705959" class="call-button">
+      <i class="fas fa-phone"></i> Call Now: 98317 05959
+    </a>
+
+    <!-- Info Items -->
+    <div class="info-items">
+      <div class="info-item">
+        <div class="icon-circle"><i class="fas fa-award"></i></div>
+        <div class="info-text">15+ Years on the Market</div>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle"><i class="fas fa-users"></i></div>
+        <div class="info-text">100+ Professionals Team</div>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle"><i class="fas fa-user-check"></i></div>
+        <div class="info-text">20000+ Happy Customers</div>
+      </div>
+      <div class="info-item">
+        <div class="icon-circle"><i class="fas fa-rocket"></i></div>
+        <div class="info-text">20000+ Successful Projects</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About / Service Description -->
+  <section id="services" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-indigo-700 text-3xl font-bold mb-8 text-center">Security Solutions for Your Work and Home</h2>
+    <p class="text-gray-700 max-w-3xl mx-auto text-center leading-relaxed mb-10">
+      We provide cutting-edge CCTV surveillance camera installation solutions designed to protect your premises. Whether residential or commercial, our trained technicians ensure a secure environment with smart, scalable options.
+    </p>
+    <div class="flex justify-center space-x-6 mb-10">
+      <button class="btn-primary">Learn More</button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white rounded-lg p-6 shadow-md text-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06b06e5a-5ab6-4874-bcb3-e733b73fb507.png" alt="Technician mounting an indoor CCTV camera on a white wall with wiring and tools visible" class="mx-auto rounded-full mb-4" onerror="this.style.display='none'" />
+        <h3 class="font-semibold text-lg mb-2">Indoor Camera Installation</h3>
+        <p class="text-gray-600">Secure your home or office interiors with discreet CCTV cameras professionally installed for optimum coverage and minimal intrusion.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 shadow-md text-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ecac98ad-bace-4cd4-a4d1-a817088d411a.png" alt="Outdoor CCTV camera installed on building exterior facing street with rain protection cover" class="mx-auto rounded-full mb-4" onerror="this.style.display='none'" />
+        <h3 class="font-semibold text-lg mb-2">Outdoor Camera Installation</h3>
+        <p class="text-gray-600">Protect your property perimeter with weather-resistant cameras positioned strategically to cover entrances and blind spots.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 shadow-md text-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2c1d87a8-cb0b-45b2-8f4c-f0da70b32262.png" alt="Person monitoring live CCTV footage remotely on smartphone for home security" class="mx-auto rounded-full mb-4" onerror="this.style.display='none'" />
+        <h3 class="font-semibold text-lg mb-2">Remote Monitoring Setup</h3>
+        <p class="text-gray-600">Stay connected with real-time alerts and live feed access from anywhere through your smartphone or computer for peace of mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Solutions Highlight -->
+  <section class="bg-white shadow-inner max-w-4xl mx-auto my-16 p-10 rounded-lg">
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Security solutions for your work and home</h2>
+    <p class="mb-6 text-gray-700 leading-relaxed">
+      At CSGO Security, we focus on delivering tailored CCTV solutions that combine advanced technology with expert service. We offer personalized consultations to design systems suitable for your specific requirements.
+    </p>
+    <h3 class="font-semibold text-indigo-600 mb-2">Affordable Service Support</h3>
+    <p class="mb-4 text-gray-600">
+      Our packages cater to different budgets and needs, ensuring you get the best value without compromising quality.
+    </p>
+    <h3 class="font-semibold text-indigo-600 mb-2">Professional Privacy and Quality</h3>
+    <p class="mb-6 text-gray-600">
+      We prioritize your privacy and use certified Hikvision products for top-notch video quality and secure data handling.
+    </p>
+    <div class="rounded-md overflow-hidden shadow-lg">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bdfae86e-5ac4-4396-a3e5-aee129af7c66.png" alt="Close up image of a Hikvision CCTV security camera mounted on a gray wall with focus on camera lens and branding" class="w-full object-cover" onerror="this.style.display='none'" />
+      <div class="bg-gray-50 p-4 text-center font-bold text-red-600">HIKVISION</div>
+    </div>
+  </section>
+
+<!-- Working Process Section -->
+<section id="process" class="relative text-white">
+  <div class="absolute inset-0 bg-gradient-to-r from-indigo-800 to-indigo-600 bg-overlay -z-10"></div>
+  <div class="max-w-6xl mx-auto px-6 py-24 text-center space-y-12">
+    <h2 class="text-4xl font-extrabold drop-shadow-lg">Our Working Process</h2>
+    <p class="max-w-3xl mx-auto text-xl drop-shadow-md">
+      We follow a clear, stepwise process to ensure your CCTV installation is smooth, effective, and lasts long.
+    </p>
+    <div class="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto text-indigo-200">
+      <div class="space-y-4">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-indigo-200 mx-auto text-xl font-bold">1</div>
+        <h3 class="text-lg font-semibold">Consultation & Assessment</h3>
+        <p>We analyze your security needs and property layout to recommend the best CCTV setup options.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-indigo-200 mx-auto text-xl font-bold">2</div>
+        <h3 class="text-lg font-semibold">Installation & Configuration</h3>
+        <p>Our expert technicians install the cameras and configure the system for optimal performance.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full border-2 border-indigo-200 mx-auto text-xl font-bold">3</div>
+        <h3 class="text-lg font-semibold">Testing & Support</h3>
+        <p>We test the full system and provide training and ongoing support for you to fully utilize your CCTV network.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Testimonial Section -->
+<section class="testimonial-section max-w-6xl mx-auto px-6 py-16">
+  <!-- Testimonial 1 -->
+  <div class="testimonial active flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/198e8a87-3149-4ed5-bb27-5014aa8a1e85.png" 
+           alt="Office CCTV" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="flex-1 text-left">
+      <blockquote class="italic text-gray-700 text-lg mb-4">
+        "The CCTV installation team from CSGO Security was prompt, professional, and very knowledgeable. Our office now feels much more secure with their high-quality system."
+      </blockquote>
+      <footer class="font-semibold text-indigo-700">- Rajesh Mukherjee, Kolkata</footer>
+    </div>
+  </div>
+
+  <!-- Testimonial 2 -->
+  <div class="testimonial hidden flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bdfae86e-5ac4-4396-a3e5-aee129af7c66.png" 
+           alt="Shop Security" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="flex-1 text-left">
+      <blockquote class="italic text-gray-700 text-lg mb-4">
+        "Excellent CCTV setup for my shop. The installation was smooth, and the system works perfectly!"
+      </blockquote>
+      <footer class="font-semibold text-indigo-700">- Suman Dutta, Kolkata</footer>
+    </div>
+  </div>
+
+  <!-- Testimonial 3 -->
+  <div class="testimonial hidden flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1">
+      <img src="cctvlive.png" alt="Home Security" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="flex-1 text-left">
+      <blockquote class="italic text-gray-700 text-lg mb-4">
+        "We feel much safer at home now. The CSGO Security team explained everything clearly!"
+      </blockquote>
+      <footer class="font-semibold text-indigo-700">- Priya Sharma, Howrah</footer>
+    </div>
+  </div>
+
+  <!-- Testimonial 4 -->
+  <div class="testimonial hidden flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1">
+      <img src="images/testimonial4-400.jpg" alt="Factory Security" class="rounded-lg shadow-lg w-full">
+    </div>
+    <div class="flex-1 text-left">
+      <blockquote class="italic text-gray-700 text-lg mb-4">
+        "Reliable CCTV for our factory premises. Installation was quick and professional."
+      </blockquote>
+      <footer class="font-semibold text-indigo-700">- Anil Agarwal, Howrah</footer>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonial { display: none; }
+  .testimonial.active { display: flex; }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const testimonials = document.querySelectorAll(".testimonial");
+
+  function showNextTestimonial() {
+    testimonials[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    testimonials[currentIndex].classList.add("active");
+  }
+
+  setInterval(showNextTestimonial, 5000); // Slide every 5s
+</script>
+<!-- Gallery Section -->
+<section id="gallery" class="max-w-7xl mx-auto px-6 py-16 relative">
+  <h2 class="text-3xl font-bold text-indigo-700 mb-6 text-center">Gallery</h2>
+  <p class="text-gray-700 max-w-4xl mx-auto text-center mb-10">
+    A glimpse of our professional CCTV installation projects and happy customers.
+  </p>
+
+  <div class="overflow-hidden">
+    <div id="gallerySlider" class="flex transition-transform duration-500">
+      <!-- Slide 1 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6d16687c-6c5e-4f89-825b-08393557542a.png"
+            alt="Technician installing CCTV"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Professional Installation</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/512be18a-b6ef-48ce-815b-dd255a3e99c0.png"
+            alt="Home CCTV security"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Home Security</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/129a7e9a-607d-4de6-9d86-dfce90be9840.png"
+            alt="Remote CCTV monitoring"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Remote Monitoring</p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8559f18-c093-4aa7-a28d-309fc73d4f52.png"
+            alt="CCTV experts with certificate"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Certified Experts</p>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://placehold.co/600x400/EEE/333?text=Extra+Slide"
+            alt="Additional CCTV work"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Extra Project</p>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://placehold.co/600x400/EEE/333?text=Slide+6"
+            alt="CCTV maintenance service"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Maintenance Service</p>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://placehold.co/600x400/EEE/333?text=Slide+7"
+            alt="Office CCTV setup"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Office Setup</p>
+        </div>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="flex-none w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-4 space-y-3">
+          <img src="https://placehold.co/600x400/EEE/333?text=Slide+8"
+            alt="Night vision CCTV"
+            class="rounded-md shadow-sm w-full object-cover"
+            onerror="this.style.display='none'" />
+          <p class="font-semibold text-indigo-700">Night Vision</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div id="galleryDots" class="flex justify-center mt-6 space-x-3"></div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("gallerySlider");
+  const slides = slider.children;
+  const totalSlides = slides.length;
+
+  const dotsContainer = document.getElementById("galleryDots");
+
+  let currentIndex = 0;
+  let slidesPerView = getSlidesPerView();
+  let totalPages = Math.ceil(totalSlides / slidesPerView);
+  let autoSlideInterval;
+
+  // Detect slides per view based on window width
+  function getSlidesPerView() {
+    if (window.innerWidth >= 1024) return 3; // Desktop
+    if (window.innerWidth >= 768) return 2;  // Tablet
+    return 1; // Mobile
+  }
+
+  // Create dots dynamically
+  function renderDots() {
+    dotsContainer.innerHTML = "";
+    totalPages = Math.ceil(totalSlides / slidesPerView);
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement("button");
+      dot.className =
+        "w-3 h-3 rounded-full mx-1 transition-all " +
+        (i === currentIndex ? "bg-indigo-600" : "bg-gray-400");
+
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateSlider();
+        resetAutoSlide();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  // Update slider position
+  function updateSlider() {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    let offset = currentIndex * (slideWidth * slidesPerView);
+
+    // Clamp offset to avoid blank space
+    const maxOffset = (totalSlides - slidesPerView) * slideWidth;
+    if (offset > maxOffset) offset = maxOffset;
+
+    slider.style.transform = `translateX(-${offset}px)`;
+
+    // Update dots
+    const dots = dotsContainer.querySelectorAll("button");
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("bg-indigo-600", idx === currentIndex);
+      dot.classList.toggle("bg-gray-400", idx !== currentIndex);
+    });
+  }
+
+  // Auto slide function
+  function autoSlide() {
+    currentIndex++;
+    if (currentIndex >= totalPages) {
+      currentIndex = 0;
+    }
+    updateSlider();
+  }
+
+  // Reset auto slide timer
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 4000);
+  }
+
+  // Touch/swipe support
+  let startX = 0;
+  let isDragging = false;
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    clearInterval(autoSlideInterval);
+  });
+
+  slider.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    // Threshold for swipe
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        // Swipe left - next slide
+        currentIndex = Math.min(currentIndex + 1, totalPages - 1);
+      } else {
+        // Swipe right - prev slide
+        currentIndex = Math.max(currentIndex - 1, 0);
+      }
+      updateSlider();
+      isDragging = false;
+      resetAutoSlide();
+    }
+  });
+
+  slider.addEventListener("touchend", () => {
+    isDragging = false;
+    resetAutoSlide();
+  });
+
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    slidesPerView = getSlidesPerView();
+    totalPages = Math.ceil(totalSlides / slidesPerView);
+    currentIndex = Math.min(currentIndex, totalPages - 1);
+    renderDots();
+    updateSlider();
+  });
+
+  // Initialize
+  renderDots();
+  updateSlider();
+  autoSlideInterval = setInterval(autoSlide, 4000);
+});
+</script>
+  <!-- Contact / Footer -->
+<footer id="contact" class="bg-indigo-700 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between gap-10">
+    
+    <!-- Left Side Contact Info -->
+    <div class="md:w-1/3">
+      <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+      <p>Reach out for consultations, quotes or general inquiries about our CCTV installation services.</p>
+
+      <!-- Address Table -->
+      <table class="mt-4 w-full text-indigo-200 border-collapse">
+        <tr>
+          <td class="py-2 font-semibold">Company:</td>
+          <td>LIVSAFE SOLUTIONS</td>
+        </tr>
+        <tr>
+          <td class="py-2 font-semibold">Location:</td>
+          <td>Kolkata, West Bengal, India</td>
+        </tr>
+        <tr>
+          <td class="py-2 font-semibold">Email:</td>
+          <td><a href="mailto:live.in" class="text-yellow-300 hover:underline">live.in</a></td>
+        </tr>
+        <tr>
+          <td class="py-2 font-semibold">Phone:</td>
+          <td><a href="tel:+919831378533" class="text-yellow-300 hover:underline">+91 9831378533</a></td>
+        </tr>
+        <tr>
+          <td class="py-2 font-semibold">Map:</td>
+          <td>
+            <a href="https://www.google.com/maps/place/Kolkata,+West+Bengal" target="_blank" class="text-yellow-300 hover:underline">
+              📍 View on Google Maps
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Right Side Contact Form -->
+    <form id="contactForm" class="md:w-2/3 space-y-6 bg-indigo-800 p-8 rounded-lg shadow-lg">
+  <h3 class="text-xl font-semibold mb-4 text-white">Send a message</h3>
+
+  <!-- Name -->
+  <input required type="text" id="name" name="name" placeholder="Your full name"
+    class="w-full rounded-md px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+
+  <!-- Email -->
+  <input required type="email" id="email" name="email" placeholder="Email address"
+    class="w-full rounded-md px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+
+  <!-- Address -->
+  <input required type="text" id="address" name="address" placeholder="Your address"
+    class="w-full rounded-md px-4 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+
+  <!-- Message -->
+  <textarea required id="message" name="message" rows="4" placeholder="Type your message here..."
+    class="w-full rounded-md px-4 py-3 text-gray-900 placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+
+  <!-- Button -->
+  <button type="submit"
+    class="w-full py-3 px-6 bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-semibold rounded-lg shadow-md transition-all duration-300">
+    Submit
+  </button>
+</form>
+
+  <!-- Thank You message (hidden by default) -->
+  <p id="thankYou" class="hidden mt-4 text-green-400 font-semibold text-center">
+    ✅ Thank you! Your message has been sent.
+  </p>
+</footer>
+
+<!-- WhatsApp Form Script -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop actual form submit
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // WhatsApp number (with country code)
+    let phoneNumber = "919831378533";
+
+    let whatsappMessage = `Hello, my name is ${name} (%0AEmail: ${email})%0A%0A${message}`;
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    // Show thank you message
+    document.getElementById("thankYou").classList.remove("hidden");
+
+    // Open WhatsApp in new tab
+    window.open(whatsappURL, "_blank");
+
+    // Reset form
+    document.getElementById("contactForm").reset();
+  });
+</script>
+
+    </div>
+    <div class="text-center py-6 text-indigo-300 text-sm">
+      © 2024 CSGO Security. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+
